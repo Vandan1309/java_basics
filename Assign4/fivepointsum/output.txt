@@ -1,0 +1,6 @@
+Five Point Summary:
+Minimum: 10
+Maximum: 30
+Mean: 17.5
+Median: 15.0
+Mode: 10
