@@ -1,0 +1,38 @@
+interface shape2D
+{
+  default float circlearea(int r)
+{
+float carea=3.14*r*r;
+ return carea;
+}
+}
+
+interface shape3d
+{
+ default float spherevolume(int ra)
+{
+float svolume=4*3.14*r*r*r/3;
+return svolume;
+}
+}
+
+abstract class shape extends shape2d extends shape3d
+{
+void display();
+}
+
+class finalshape extends shape
+{
+public void display(int radius)
+{
+System.out.println("Area of the circle is: " + circlearea(radius));
+System.out.println("Volume of the sphere is: " + spherevolume(radius));
+}
+
+public static void main(String args[] )
+{
+ finalshape s=new finalshape();
+ s.display(10);
+}
+
+}
